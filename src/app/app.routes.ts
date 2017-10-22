@@ -6,6 +6,6 @@ import { Photo2Component } from './photos/components/photo2/photo2.component';
 
 export const AppRoutes: Routes = [
   { path: '', component: DefaultComponent },
-  { path: 'photo1', component: Photo1Component },
+  { path: 'photo1/:photoid', component: Photo1Component },
   { path: 'photo2', component: Photo2Component }
 ];

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-photo1',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Photo1Component implements OnInit {
 
-  constructor() { }
-
+  photoid: string;
+  constructor(private route: ActivatedRoute) { }
+  
   ngOnInit() {
+    this.route.params.subscribe((params) => this.photoid = params.photoid);
   }
 
 }
