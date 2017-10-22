@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #333;
+}
+nav {
+  margin: 2em;
+  text-align: center;
+  font-family: Arial;
+}
+main {
+  text-align: center;
+  width: 50%;
+}
+.active {
+  text-decoration: underline;
+}
