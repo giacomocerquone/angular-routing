@@ -1,7 +1,7 @@
 <nav>
-  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Default</a>
-  <a routerLink="/photo1" routerLinkActive="active">Photo1 Component</a>
-  <a routerLink="/photo2" routerLinkActive="active">Photo2 Component</a>
+  <a [routerLink]=['/'] routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Default</a>
+  <a [routerLink]=['/photo1'] routerLinkActive="active">Photo1 Component</a>
+  <a [routerLink]=['/photo2'] routerLinkActive="active">Photo2 Component</a>
 </nav>
 
 <main>
